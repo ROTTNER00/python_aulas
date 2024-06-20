@@ -1,0 +1,22 @@
+'''
+Autor: Felipe Rottner Rodrigues
+Data: 13/06/2024
+Versão: 1.0
+Descrição: Faça um programa que receba dois valores, sendo que o
+           primeiro deve ser menor que o segundo.
+           O programa deve apresentar todos os números ímpares
+           contidos nesta sequência.
+           (Modulo %. Exemplo: 7%2 = 1)
+'''
+#=====================================================================================
+num1 = 0
+num2 = 0
+
+print('Digite dois números,mas o primeiro deve ser menor que o segundo!')
+num1 = int(input('Digite o primeiro número:'))
+num2 = int(input('Digite  o segundo número:'))
+
+#for numero in range(5,10):
+for numero in range(num1,num2 + 1):
+    if numero % 2 != 0:
+        print(numero)
